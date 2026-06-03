@@ -1,3 +1,57 @@
+LightTrace Echo | Warrior of Chronos
+
+📖 Project Introduction
+LightTrace Echo is a standalone 2D action-adventure platformer developed with Qt and C++17, featuring three core mechanics: AI-procedurally generated weapons, dual light/dark world switching, and an original time-freeze combo combat system.
+Torn apart by a spacetime rift, the world splits into the Realm of Light and the Shadow Realm. Players take on the role of a transdimensional warrior who traverses both realms with time-freeze powers, defeating the final boss to mend the spacetime crack and save the collapsing world.
+The game is cross-platform compatible with Windows, macOS and Linux.
+
+✨ Core Features
+Native DeepSeek API AI Integration
+After clearing each stage, the AI generates brand-new randomized weapons which are automatically added to the in-game shop.
+Dynamic AI-driven dialogue pops up randomly during gameplay to enhance narrative immersion.
+AI assisted the team with framework coding throughout development.
+Dual-Realm Map Mechanic
+Realm of Light: Full map visibility; enemies have higher HP and attack values for high-risk high-reward gameplay.
+Shadow Realm: Pitch-black map with vision limited only to the area surrounding the player; enemies are weaker in stats.
+Both realms share identical base maps. Undefeated enemies respawn when switching back between realms; the final boss fight merges both worlds into one battlefield.
+Original Time-Stop Combo Combat System
+Press key L to activate a 3-second global time freeze:
+All in-game entities stop moving, allowing unrestricted player movement and attacks.
+Every basic attack marks a positional coordinate on the map.
+When time resumes, the player teleports sequentially to all marked positions to unleash chained strikes before returning to the original spot.
+
+🎮 Game Controls
+Key	Function
+W/A/S/D	Character Movement
+J	Basic Attack
+K	Swap Equipped Weapon
+T	Toggle between Light / Shadow Realm
+L	Activate Time-Freezing Ultimate Skill
+U	Use HP Potion
+I	Use Mana/Energy Potion
+O	Fireball Ranged Attack
+B	Open Shop Menu (when adjacent to shop NPC)
+
+🧩 Game System Modules
+Dual World Switch System: Instant environment toggle with independent enemy spawn rules and vision settings for each realm.
+Real-time Combat System: Weapon switching, consumable potions, fireball projectile and signature time-freeze ultimate ability.
+Shop & Progression System: Spend in-game currency to purchase AI-generated random weapons, healing/energy potions and miscellaneous consumables.
+Stage & Boss System: Campaign progresses synchronously across both realms; the concluding boss battle merges two worlds, and defeating the boss completes the full playthrough.
+
+🛠️ Technical Details
+Development Environment: Qt 6.10.1 + MinGW
+Programming Language: C++17
+AI Solution: DeepSeek LLM (for project framework auxiliary development) + DeepSeek API (in-game procedural weapon & dialogue generation)
+Core Architecture: Object-Oriented entity design. A unified EntityManager manages all game objects including playable character, enemies, projectiles, items and map colliders.
+
+🤝 Development Team
+hyxCoding, ffpinkle
+
+📄 License
+This open-source project is licensed under the MIT License.
+
+
+
 超时空勇士：光痕回响 | LightTrace Echo
 
 📖 项目简介
